@@ -24,6 +24,7 @@ declare(strict_types=1);
 namespace pocketmine\level;
 
 use pocketmine\level\format\Chunk;
+use pocketmine\block\Block;
 
 interface ChunkManager{
 	/**
@@ -48,6 +49,13 @@ interface ChunkManager{
 	 * @return int 0-15
 	 */
 	public function getBlockDataAt(int $x, int $y, int $z) : int;
+	
+	/**
+	 * Gets the Block
+	 *
+	 * @return Block
+	 */
+	public function getBlockAt(int $x, int $y, int $z) : Block;
 
 	/**
 	 * Sets the raw block metadata.
