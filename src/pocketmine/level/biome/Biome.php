@@ -40,6 +40,7 @@ abstract class Biome{
 	public const RIVER = 7;
 
 	public const HELL = 8;
+	public const END = 9;
 
 	public const ICE_PLAINS = 12;
 
